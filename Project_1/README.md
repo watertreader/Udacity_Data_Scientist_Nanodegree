@@ -71,40 +71,7 @@ f.  The company which host/produces th most erformance and matured performance</
     </main>
   </div>
 
-  </div>
-
-          
-<div class="footer container-xl width-full p-responsive" role="contentinfo">
-  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 color-text-secondary border-top color-border-secondary ">
-    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2021 GitHub, Inc.</li>
-        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="a818c89e72b0ccc67ed8768d87ef3630f3cd3a2caf62c3a1b9e9d2328276723b">Terms</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="0c0adc196005f6b6756ca53d623ce214c8f72767f9eb9ef5db3be83fa948be57">Privacy</a></li>
-        <li class="mr-3 mr-lg-0"><a data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="36e5b893932b2b290bbe59247a0b7bbf74c28640a8748509e83e49597adb1ea4" href="https://github.com/security">Security</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://www.githubstatus.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="4c653a9f1f423d2d5a3a352401ad9eedd0ae52e71646fa0aea9a1a6553265211">Status</a></li>
-        <li><a data-ga-click="Footer, go to help, text:Docs" href="https://docs.github.com">Docs</a></li>
-    </ul>
-
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
-      <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
-    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-</svg>
-</a>
-    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-        <li class="mr-3 mr-lg-0"><a href="https://support.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="69643fa4c882f60a2a9b297a7462a988c7bc3a90bc2f4b903f5df9ad7e67dd7d">Contact GitHub</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Pricing&quot;,&quot;label&quot;:&quot;text:Pricing&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="c17953b9a770eb5db956b0aa4e36eb4131ffcfbf5c1f2812f006fbd21ef30479">Pricing</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://docs.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="635de09691490933eac3c7f8256a62ff86904d067e4909808d0f296ba6b1557d">API</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://services.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to training&quot;,&quot;label&quot;:&quot;text:training&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="309c07d891fef2206e11b9be421f59a937eaf1c5d0af4cb7e1e754d59410c924">Training</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;,&quot;originating_url&quot;:&quot;https://github.com/watertreader/Udacity/blob/main/README.md&quot;,&quot;user_id&quot;:38108091}}" data-hydro-click-hmac="577b53b9b719c08c2c5d48c8d107436968386cbe18ce51eb0e9080590e7991e9">Blog</a></li>
-        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
-    </ul>
-  </div>
-  <div class="d-flex flex-justify-center pb-6">
-    <span class="f6 color-text-tertiary"></span>
-  </div>
-
-  
-</div>
+     
 
 
 
