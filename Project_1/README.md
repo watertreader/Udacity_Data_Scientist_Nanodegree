@@ -39,7 +39,7 @@ For this project, I was interested in studying the art and entertainment activit
 
 ## File Descriptions <a name="files"></a>
 
-There are a notebook available here (exploratory.ipynb) to showcase work related to the above questions.  
+There are a notebook available here (exploratory.ipynb) to showcase work related to the above questions. The database file arts-entertainment-classification-database-2018-to-2020.csv is  likewise included
 
 
 ## Results<a name="results"></a>
