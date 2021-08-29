@@ -45,27 +45,7 @@ f.  The company which host/produces th most erformance and matured performance</
 
     </div>
 
-  </readme-toc>
-
   
-
-  <details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog">
-    <summary data-hotkey="l" aria-label="Jump to line"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get">
-        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
-        <button data-close-dialog="" type="submit" data-view-component="true" class="btn">
-  
-  Go
-  
-
-</button>
-</form>    </details-dialog>
-  </details>
-
-
-</div>
-
 
 
 
