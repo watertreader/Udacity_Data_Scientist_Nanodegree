@@ -27,14 +27,19 @@ Or else you can run google colab and upload this python notebook
 For this project, I was interested in studying the art and entertainment activities classification in Singapore from 2018 to 2020 :
 
 
-    What does the overall distribution of the Arts Performance send for classification? 
-      a. What is the total number or activities submitted for each year 
-      b. What are the main activities that is submiited for classification 
-      c. In which month did nost of performance occured? 
-      d. What is language medium of performance that is used 
-      e. The percentage of mature-rated performance for each year. Is there growth 
-      f. The company which host/produces th most erformance and matured performance
-    The effect of Covid has on the arts performance
+    Question 1**:   What is the number of Art Performance/Event send for classification in each year? 
+
+##### **Question 2**  What is the main activities for the year 2018 - 2020?
+
+##### **Question 3** What is the period of time in the year with the most performance?
+
+##### **Question 4** What is the general classification rating?
+
+##### **Question 5** Is there a correlation between langauge used and the classification?
+
+More intrinisically, we want to examine the Covid effect on the Art Scene.
+
+
 
 
 ## File Descriptions <a name="files"></a>
