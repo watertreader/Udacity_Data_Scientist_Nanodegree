@@ -57,6 +57,16 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    
+    '''
+    INPUT
+    model, the pipeline we have created
+    model_filepath, the file to save the model to
+    
+    OUTPUT
+    None. The model is saved to filepath
+    '''
+    
     with open(model_filepath, 'wb') as file:  
         pickle.dumps(model,file)
 
