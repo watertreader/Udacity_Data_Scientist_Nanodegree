@@ -1,16 +1,55 @@
 import sys
+import pandas as pd
 
+from sqlalchemy import create_engine
 
 def load_data(database_filepath):
-    pass
+    engine = create_engine('sqlite:///DisasterResponse.db')
+    connection = engine.connect()
+    df = pd.read_sql_table(engine.table_names()[0], connection)
+    
+    X = df['message']
+    Y = df.loc[:, df.columns != 'message']
+    Y = Y.drop(columns=['index', 'id', 'original', 'genre'], axis=1)
+    
+    categories = df.categories.str.split(';', expand=True)
+    names= categories.iloc[0].apply(lambda x: x[:-2])
+    
+    return X, Y, names
 
 
 def tokenize(text):
-    pass
+    nltk.download('stopwords')
+    nltk.download('punkt')
+    nltk.download('wordnet')
+
+    stop_words = stopwords.words("english")
+    lemmatizer = WordNetLemmatizer()
+    
+    # normalize case and remove punctuation
+    text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
+    
+    # tokenize text
+    tokens = word_tokenize(text)
+    
+    # lemmatize andremove stop words
+    tokens = [lemmatizer.lemmatize(word) for word in tokens if word not in stop_words]
+
+    return tokens
 
 
 def build_model():
-    pass
+    pipeline = Pipeline([
+        ('feat', FeatureUnion([
+            ('pipeline', Pipeline([
+                ('vect', CountVectorizer(tokenizer=tokenize)),
+                ('tfidf', TfidfTransformer())
+            ]))            
+        ])),
+        ('clf', MultiOutputClassifier(AdaBoostClassifier()))
+    ])
+    
+    return pipeline
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
@@ -18,7 +57,8 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
-    pass
+    with open(model_filepath, 'wb') as file:  
+        pickle.dumps(model,file)
 
 
 def main():

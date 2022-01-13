@@ -1,16 +1,71 @@
 import sys
+import pandas as pd
 
+from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
-    pass
 
+    '''
+    INPUT
+    file paths of message and categories files
+    
+    OUTPUT
+    a dataframe contains both dataset
+    '''
+    
+    messages   = pd.read_csv(messages_filepath)
+    categories = pd.read_csv(categories_filepath)
+    
+    return pd.merge(messages, categories, on='id')
 
 def clean_data(df):
-    pass
+    
+    '''
+    INPUT
+    a dataframe with both messages and categories 
+    
+    OUTPUT
+    cleaned dataframe, with new expanding columns for each message category
+    '''
+    
+    ## Split categories into separate category columns
+    categories = df.categories.str.split(';', expand=True)
+    row = categories.iloc[0]
+    category_colnames = row.apply(lambda x: x[:-2])
+    categories.columns = category_colnames
+    
+    ## Convert category values to just numbers 0 or 1
+    for column in categories:
+    # set each value to be the last character of the string
+        categories[column] = categories[column].str.split("-").str[1]
+#       column
+#     # convert column from string to numeric
+        categories[column] = pd.to_numeric(categories[column],errors='coerce')
+    
+    ## Replace categories column in df with new category columns.
+    df.drop(['categories'], axis=1, inplace= True)
+    df = pd.concat([df, categories], axis=1)
+    
+    ## drop duplicate
+    df.drop_duplicates(inplace=True)
+    
+    return df
+    
 
 
 def save_data(df, database_filename):
-    pass  
+    
+    '''
+    INPUT
+    cleaned dataframe and the filepath for the SQL database for saving the dataframe
+    
+    OUTPUT
+    None but dataframe is saved to database
+    '''
+        
+    engine = create_engine('sqlite:///' + database_filename)
+    df.to_sql('InsertTableName', engine, index=False, if_exists='replace')
+    engine.dispose()
 
 
 def main():
