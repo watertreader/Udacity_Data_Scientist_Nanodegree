@@ -19,6 +19,13 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
+    '''
+    INPUT
+    text, the text we will want to breakdown into token
+    
+    OUTPUT
+    tokens. the list of the words that we will watch for
+    '''
     nltk.download('stopwords')
     nltk.download('punkt')
     nltk.download('wordnet')
