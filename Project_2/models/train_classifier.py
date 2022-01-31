@@ -1,21 +1,37 @@
 import sys
 import pandas as pd
+import nltk
+import re
+import pickle
 
+## for importing scikit-learn
 from sqlalchemy import create_engine
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.multioutput import MultiOutputClassifier
+from sklearn.metrics import classification_report
+
+## for importing nltk
+from nltk.corpus import stopwords
+from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
 
 def load_data(database_filepath):
-    engine = create_engine('sqlite:///DisasterResponse.db')
+    engine = create_engine('sqlite:///' + database_filepath)
     connection = engine.connect()
     df = pd.read_sql_table(engine.table_names()[0], connection)
     
     X = df['message']
     Y = df.loc[:, df.columns != 'message']
-    Y = Y.drop(columns=['index', 'id', 'original', 'genre'], axis=1)
+    print(Y.columns)
+    Y = Y.drop(columns=['id', 'original', 'genre', 'child_alone'], axis=1)
     
-    categories = df.categories.str.split(';', expand=True)
-    names= categories.iloc[0].apply(lambda x: x[:-2])
+    #categories = df.categories.str.split(';', expand=True)
+    #names= categories.iloc[0].apply(lambda x: x[:-2])
     
-    return X, Y, names
+    return X, Y, Y.columns
 
 
 def tokenize(text):
@@ -53,14 +69,21 @@ def build_model():
                 ('tfidf', TfidfTransformer())
             ]))            
         ])),
-        ('clf', MultiOutputClassifier(AdaBoostClassifier()))
+        ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
     
     return pipeline
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
-    pass
+    #model.fit(X_train,y_train)
+
+    y_pred = model.predict(X_test)
+
+    for category in category_names:
+	    print('Category: {}'.format(category))
+	    idx = Y_test.columns.get_loc(category)
+	    print(classification_report(Y_test[category], y_pred[:,idx]))
 
 
 def save_model(model, model_filepath):
@@ -75,7 +98,7 @@ def save_model(model, model_filepath):
     '''
     
     with open(model_filepath, 'wb') as file:  
-        pickle.dumps(model,file)
+        pickle.dump(model,file)
 
 
 def main():
