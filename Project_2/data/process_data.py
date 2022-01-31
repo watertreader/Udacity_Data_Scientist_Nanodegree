@@ -46,6 +46,9 @@ def clean_data(df):
     df.drop(['categories'], axis=1, inplace= True)
     df = pd.concat([df, categories], axis=1)
     
+    ## remove the related value which is greater than 2
+    df = df[df.related < 2]
+    
     ## drop duplicate
     df.drop_duplicates(inplace=True)
     
