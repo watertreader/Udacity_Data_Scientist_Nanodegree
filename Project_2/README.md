@@ -37,6 +37,9 @@ File structure of project is given by
 	- workspace
 		- \app
 			- run.py: flask file to run the app
+			- case1.png: snap shot of first test case
+			- case2a.png: snap shot of 2nd test case (upper portion)
+			- case2b.png: snap shot of 2nd test case (lower portion)
 		- \templates
 			- master.html: main page of the web application 
 			- go.html: result web page
@@ -47,6 +50,8 @@ File structure of project is given by
 			- process_data.py: ETL process
 		- \models
 			- train_classifier.py: classification code
+	        - ETL Pipeline Preparation.ipynb: jupyter notebook file for ETL pipeline
+		- ML Pipeline Preparation.ipynb: jupyter notebook file for ML pipeline
 
 ## Installation <a name="Installation"></a>
 
