@@ -12,6 +12,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.metrics import classification_report
+from sklearn.model_selection import GridSearchCV
 
 ## for importing nltk
 from nltk.corpus import stopwords
@@ -72,7 +73,16 @@ def build_model():
         ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
     
-    return pipeline
+    parameters = { 
+    'clf__estimator__n_estimators': [200, 500],
+    'clf__estimator__max_features': ['auto', 'sqrt', 'log2'],
+    'clf__estimator__max_depth' : [4,5,6,7,8],
+    'clf__estimator__criterion' :['gini', 'entropy']
+    }
+
+    cv =  GridSearchCV(pipeline, param_grid=parameters)
+    
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
