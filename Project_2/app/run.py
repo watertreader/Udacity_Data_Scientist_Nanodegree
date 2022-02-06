@@ -1,13 +1,23 @@
 import json
+from pkgutil import iter_modules
 import plotly
 import pandas as pd
+import numpy as np
+import re
+
+from collections import Counter
 
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
 from flask import Flask
 from flask import render_template, request, jsonify
-from plotly.graph_objs import Bar
+
+from plotly.subplots import make_subplots
+from plotly.graph_objs import Bar, Scatter, Pie
+import operator
+
 #from sklearn.externals import joblib
 import joblib
 from sqlalchemy import create_engine
@@ -15,7 +25,11 @@ from sqlalchemy import create_engine
 
 app = Flask(__name__)
 
+stop_words = stopwords.words("english")
+lemmatizer = WordNetLemmatizer()
+
 def tokenize(text):
+    
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
 
@@ -43,6 +57,13 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+
+    print(df[df.columns[8:]].sum())
+    total = df[df.columns[8:]].sum().sum()
+    cat_dist = df[df.columns[4:]].sum()/total             # proportion based on\
+                                                          # categories
+    cat_name = list(cat_dist.index)                              # category names
+
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -67,19 +88,22 @@ def index():
         },
         {
             'data': [
-                Bar(
-                    x=genre_names,
-                    y=genre_counts
+                Pie(
+                    labels=cat_name,
+                    values=cat_dist
                 )
             ],
 
             'layout': {
-                'title': 'Distribution of Message Genres',
+                'title': 'Distribution of Aid Required',
                 'yaxis': {
-                    'title': "Count"
+                    'title': "Proportion",
+                    'automargin':True
                 },
                 'xaxis': {
-                    'title': "Genre"
+                    'title': "Category",
+                    'tickangle': -40,
+                    'automargin':True
                 }
             }
         }
@@ -91,7 +115,6 @@ def index():
     
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
-
 
 # web page that handles user query and displays model results
 @app.route('/go')
