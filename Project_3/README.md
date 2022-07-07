@@ -24,7 +24,8 @@ The project goal is to demonstrate my familiarity with the following subject mat
 	2: Recommendation System 
     	2a: Rank Based Recommendations
     	2b: User-User Based Collaborative Filtering
-		42: Matrix Factorization
+		2c: Matrix Factorization
+	3: Analysis Skill Set
 
 In this project, we will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles they'll like.
 
@@ -34,22 +35,17 @@ The data is provided by IBM Watson Platform
 File structure of project is given by
 
 	- README.md: read me file
-	- ETL Pipeline Preparation.ipynb: contains ETL pipeline preparation code
-
+	- Recommendations_with_IBM.ipynb: containing the project codes, excercise and graphs
+	- Recommendations_with_IBM.pdf: the above in pdf
 
 ## Installation <a name="Installation"></a>
 
-1. Run the following commands in the project's root directory to set up your database and model.
+1. Download or clone the entire project into a workspace. Navigate to the directory where it reside aka c:/xxx/Project3
 
-    - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-    - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+2. Run the following command in the app's directory to run your web app. Make sure that Anaconda Package is installed
+    `jupyter notebook`
 
-2. Run the following command in the app's directory to run your web app.
-    `python run.py`
-
-3. Go to http://0.0.0.0:3001/
+3. The project would appear in the web browser 
 
 ## Acknowledgements <a name="acknowedgement"></a>
 
