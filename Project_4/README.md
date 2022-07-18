@@ -1,5 +1,5 @@
 
-# Recommendation with IBM Project
+# Starbucks Capstone Challenge Project
 
 
 
@@ -18,7 +18,7 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ## Project Introduction<a name="introduction"></a>
 
-The project goal is to demonstrate my familiarity with the following subject matters:
+The project goal is to build a data science project to leverage what I have learned throughout the program
 
     1: Exploratory Data Analysis.
 	2: Recommendation System 
@@ -27,9 +27,9 @@ The project goal is to demonstrate my familiarity with the following subject mat
 		2c: Matrix Factorization
 	3: Analysis Skill Set
 
-In this project, we will analyze the interactions that users have with articles on the IBM Watson Studio platform, and make recommendations to them about new articles they'll like.
+In this project, we will combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type
 
-The data is provided by IBM Watson Platform
+The data is provided by Starbucks
 
 ## File Descriptions <a name="files"></a>
 File structure of project is given by
