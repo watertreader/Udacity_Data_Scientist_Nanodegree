@@ -14,9 +14,25 @@
 
 ## Installation <a name="installation"></a>
 
-There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python. The code should run with no issues using the latest Anaconda package version. All other libraries needed is declared within the file
+There should be no other necessary libraries to run the code here beyond the Anaconda distribution of Python and what is listed. The code should run with no issues using the latest Anaconda package version. All other libraries needed is declared within the file
 
 ## Project Introduction<a name="introduction"></a>
+
+The projects aims to use the data to uncover the best promotional strategy (in terms of maximizing impact while limiting cost) for Starbucks
+
+	a) Identify which groups of people are most responsive to each type of offer.
+
+	b) How best to present each type of offer?
+
+	c) How many people across different categories actually completed the transaction in the offer window?
+
+	d) Which individual attributes contributed the most during the offer window?
+
+We will also try to train a model to predict the amount that can be spent by an individual given the individual’s traits and offer details. This will help us decide which promotional offer best suits the individual and respond to the target audience with better accuracy.
+
+
+
+
 
 The project goal is to build a data science project to leverage what I have learned throughout the program
 
