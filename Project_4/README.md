@@ -52,7 +52,7 @@ File structure of project is given by
 
 	- README.md: read me file
 	- Starbucks_Capstone_notebook.ipynb: containing the project codes, excercise and graphs
-	- Recommendations_with_IBM.pdf: the above in pdf
+	- Starbucks_Capstone_notebook.pdf: the above in pdf
 
 ## Installation <a name="Installation"></a>
 
