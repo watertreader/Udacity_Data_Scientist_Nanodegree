@@ -22,7 +22,7 @@ The projects aims to use the data to uncover the best promotional strategy (in t
 
 	a) Identify which groups of people are most responsive to each type of offer.
 
-	b) What is best vehicle to present each type of offer?
+	b) How best to present each type of offer?
 
 	c) How many people across different categories actually completed the transaction in the offer window?
 
@@ -31,24 +31,27 @@ The projects aims to use the data to uncover the best promotional strategy (in t
 We will also try to train a model to predict the amount that can be spent by an individual given the individual’s traits and offer details. This will help us decide which promotional offer best suits the individual and respond to the target audience with better accuracy.
 
 
+
+
+
 The project goal is to build a data science project to leverage what I have learned throughout the program
 
     1: Exploratory Data Analysis.
-	2: Recommendation System 
-    	2a: Rank Based Recommendations
-    	2b: User-User Based Collaborative Filtering
-		2c: Matrix Factorization
-	3: Analysis Skill Set
+	2: Basic Programming Skill
+		2a: Basic Python
+		2b: Pandas library
+		2c: Matplotlib
+	3: Analysis Skill Set, coupled with statistical knowledge
 
 In this project, we will combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type
 
-The data used in the study is provided by Starbucks
+The data is provided by Starbucks
 
 ## File Descriptions <a name="files"></a>
 File structure of project is given by
 
 	- README.md: read me file
-	- Recommendations_with_IBM.ipynb: containing the project codes, excercise and graphs
+	- Starbucks_Capstone_notebook.ipynb: containing the project codes, excercise and graphs
 	- Recommendations_with_IBM.pdf: the above in pdf
 
 ## Installation <a name="Installation"></a>
@@ -62,7 +65,7 @@ File structure of project is given by
 
 ## Acknowledgements <a name="acknowedgement"></a>
 
-Thanks the Udacity Team for their help and useful suggestions
+Thanks for Udacity Team for their guidance and help so far
 
 ## Licensing <a name="licensing"></a>
 
