@@ -22,16 +22,13 @@ The projects aims to use the data to uncover the best promotional strategy (in t
 
 	a) Identify which groups of people are most responsive to each type of offer.
 
-	b) How best to present each type of offer?
+	b) What is best vehicle to present each type of offer?
 
 	c) How many people across different categories actually completed the transaction in the offer window?
 
 	d) Which individual attributes contributed the most during the offer window?
 
 We will also try to train a model to predict the amount that can be spent by an individual given the individual’s traits and offer details. This will help us decide which promotional offer best suits the individual and respond to the target audience with better accuracy.
-
-
-
 
 
 The project goal is to build a data science project to leverage what I have learned throughout the program
@@ -45,7 +42,7 @@ The project goal is to build a data science project to leverage what I have lear
 
 In this project, we will combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type
 
-The data is provided by Starbucks
+The data used in the study is provided by Starbucks
 
 ## File Descriptions <a name="files"></a>
 File structure of project is given by
@@ -65,7 +62,7 @@ File structure of project is given by
 
 ## Acknowledgements <a name="acknowedgement"></a>
 
-Thanks for Udacity Team
+Thanks the Udacity Team for their help and useful suggestions
 
 ## Licensing <a name="licensing"></a>
 
